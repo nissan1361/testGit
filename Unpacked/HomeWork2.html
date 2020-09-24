@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var money1 = prompt("Введите сумму вклада: ");
+  money1 = parseFloat(money1);
+  var procent1 = prompt("Введите проценты: ");
+  procent1 = parseFloat(procent1);
+
+  var s = money1;
+  for (var i = 0; i<5; i++){
+    s= s + (s * (procent1/100));
+    alert("Сумма за " + (i+1) + " год равна " + s);
+  } 
+
+</script>

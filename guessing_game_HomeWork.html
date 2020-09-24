@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var answer = +prompt("Загадай число другу (0 - 100): ");
+  var userAnswer = +prompt("Угадай число от 0 до 100: ");
+
+  
+  //var maxTryCount = 7;
+
+  while (answer != 1000 || userAnswer != 1000) {
+    if (userAnswer == answer){
+      alert("Поздравляю! Вы угадали!");
+      
+    } else if (userAnswer == 1000){
+      break;
+    } else if (userAnswer < answer) {
+      alert("Загаданное число больше вашего!");
+      alert("Чтобы выйти введите 1000");
+    } else if (userAnswer > answer) {
+      alert("Загаданное число меньше вашего!");
+      alert("Чтобы выйти введите 1000");
+    } 
+    userAnswer = +prompt("Попробуйте ещё раз. Введите от 1 до 100: ");
+  }
+  alert("Game Over");
+
+  
+  
+</script>

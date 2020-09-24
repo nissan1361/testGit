@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var answer = parseInt(Math.random() * 100);
+  var userAnswer = +prompt("Угадай число от 0 до 100: ");
+
+  var maxTryCount = 7;
+
+  for (var tryCount = 1; tryCount < maxTryCount; tryCount++) {
+    if (userAnswer == answer){
+      document.write("Поздравляю! Вы угадали!");
+      break;
+    } else if (userAnswer < answer) {
+      document.write("Загаданное число больше вашего!");
+    } else if (userAnswer > answer) {
+      document.write("Загаданное число меньше вашего!");
+    }
+    document.write("Неверно, осталось попыток: " + (maxTryCount - tryCount) + "<br>");
+    userAnswer = +prompt("Попробуйте ещё раз. Введите от 1 до 100: ");
+  }
+
+  if (tryCount == maxTryCount){
+    alert("Вы проиграли!");
+  }
+
+  document.write("Правильным был ответ: " + answer);
+</script>

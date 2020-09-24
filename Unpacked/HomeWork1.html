@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var answer1 = "Стул";
+  var answer12 = "стул";
+  var rightAnswers = 0;
+  var userAnswer1 = prompt("Загадка: у него 4 ноги, на нём сидят. Что это?: ");
+  if (userAnswer1 == answer1 || userAnswer1 == answer12){
+    alert("Вы угадали, Поздравляю!");
+    rightAnswers = rightAnswers + 1;
+  } else {
+    alert("Вы не угадали!");
+  }
+
+
+  answer1 = "Солнце";
+  answer12 = "солнце";
+
+  var userAnswer2 = prompt("Загадка: Светит как прожектор, \n вокруг него крутится земля. Что это?: ");
+  if (userAnswer2 == answer1 || userAnswer2 == answer12){
+    alert("Вы угадали, Поздравляю!");
+    rightAnswers = rightAnswers + 1;
+  } else {
+    alert("Вы не угадали!");
+  }
+
+
+  answer1 = "Python";
+  answer12 = "python";
+  var answer13 = "питон"
+  var answer14 = "Питон"
+
+  var userAnswer3 = prompt("Загадка: Это и змея, и язык программирования. Что это?: ");
+  if (userAnswer3 == answer1 || userAnswer3 == answer12 || userAnswer3 == answer13 || userAnswer3 == answer14){
+    alert("Вы угадали, Поздравляю!");
+    rightAnswers = rightAnswers + 1;
+  } else {
+    alert("Вы не угадали!");
+  }
+
+  alert("Правильных ответов: " + rightAnswers);
+  alert("Game over!");
+</script>
